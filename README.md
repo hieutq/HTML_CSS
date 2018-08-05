@@ -1,7 +1,7 @@
 //cac buoc day code len repo
-step1: git add "file name"
-step2: git commit -m "content"
-step3: git push origin <name branch>
+- step1: git add "file name"
+- step2: git commit -m "content"
+- step3: git push origin <name branch>
 
 //cac buoc de lay code tu tren repo (or branch) ve nhanh cua minh
 TH1: lay code ten nhanh cua minh tao ra ve may 
