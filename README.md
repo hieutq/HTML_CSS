@@ -9,3 +9,7 @@ TH1: lay code ten nhanh cua minh tao ra ve may
 TH2: lay code cuar nhanh nguoi khac tao ve nhanh cua minh
 - git fetch
 - git pull origin <ten branch>
+
+//more about git
+- git checkout -b <branch>   (tao moi branch)
+
