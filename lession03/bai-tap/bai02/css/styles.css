@@ -1,0 +1,26 @@
+.table{
+	width: 850px;
+	height: 80px;
+}
+ .category1{
+ 	width: 170px;
+ 	-webkit-transition: text .1s;
+ 	transition: .1s;
+}
+.category1:hover{
+	color: blue;
+	text-decoration: underline;
+}
+.category2{
+	width: 170px;
+	font-weight: bold;
+	-webkit-transition: text .1s;
+	transition: .1s;
+}
+.category2:hover {
+	color: blue;
+	text-decoration: underline;
+}
+.img{
+	text-align: center;
+}
