@@ -1,0 +1,42 @@
+.header {
+    background: blue;
+    height: 50px;
+    text-align: center;
+}
+
+.menu {
+    background: red;
+    text-align: center;
+    height: 25px;
+}
+
+.content {
+    height: 500px;
+}
+
+.content .leftContent {
+    float: left;
+    background: violet;
+    width: 25%;
+    height: 100%;
+}
+
+.content .middle {
+    width: 50%;
+    background: yellow;
+    float: left;
+    height: 100%;
+}
+
+.content .rightContent {
+    width: 25%;
+    background: green;
+    float: right;
+    height: 100%;
+}
+
+.footer {
+    height: 35px;
+    background: gray;
+    text-align: center;
+}

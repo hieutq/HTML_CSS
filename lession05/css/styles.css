@@ -1,0 +1,31 @@
+ul {
+    list-style: none;
+}
+
+.menu > li {
+    float: left;
+    padding-right: 20px;
+    text-align: center;
+    position: relative;
+}
+
+.sub-menu ul {
+    position: absolute;
+    width: 114px;
+    padding: 0;
+    display: none;
+}
+
+.sub-menu ul li {
+    text-align: left;
+}
+
+.sub-menu:hover > ul {
+    display: block;
+}
+
+.sub-menu ul li:hover {
+    background: grey;
+    color: white;
+}
+
