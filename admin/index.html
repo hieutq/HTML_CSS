@@ -1,98 +1,226 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+    <head>
 
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <!-- links -->
+        <link rel="stylesheet" type="text/css" href="./css/styles.css">
+        <!-- icon-CDN -->
+        <link rel="stylesheet" href="https://unpkg.com/@coreui/icons/css/coreui-icons.min.css">
+        <!-- CoreUI CSS -->
+        <link rel="stylesheet" href="https://unpkg.com/@coreui/coreui/dist/css/coreui.min.css">
+        <!-- fontawesome CDN-->
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
 
-    <title>Collapsible sidebar using Bootstrap 4</title>
+        <title>Boostrap admin</title>
 
-    <!-- Bootstrap CSS CDN -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
-    <!-- Our Custom CSS -->
-    <link rel="stylesheet" href="./css/styles.css">
+    </head>
+    <body class="app header-fixed sidebar-fixed footer-fixed sidebar-lg-show">
+        
+        <div>
+          
+            <header class="app-header navbar">
+                <button class="navbar-toggler sidebar-toggler d-lg-none mr-auto" type="button" data-toggle="sidebar-show">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <a class="navbar-brand" href="#">
+                    <img class="navbar-brand-full" src="./img/logo.svg" width="89" height="25" alt="CoreUI Logo">
+                    <img class="navbar-brand-minimized" src="./img/sygnet.svg" width="30" height="30" alt="CoreUI Logo">
+                </a>
+                <button class="navbar-toggler sidebar-toggler d-md-down-none" type="button" data-toggle="sidebar-lg-show">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <ul class="nav navbar-nav d-md-down-none">
+                    <li class="nav-item px-3">
+                        <a class="nav-link" href="#">Dashboard</a>
+                    </li>
+                    <li class="nav-item px-3">
+                        <a class="nav-link" href="#">Users</a>
+                    </li>
+                    <li class="nav-item px-3">
+                        <a class="nav-link" href="#">Settings</a>
+                    </li>
+                </ul>
+                <ul class="nav navbar-nav ml-auto">
+                    <li class="nav-item dropdown d-md-down-none">
+                        <a class="nav-link" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
+                            <i class="cui-bell" aria-hidden="true" style="font-size: 16px;"></i>
+                            <span class="badge badge-pill badge-danger">5</span>
+                        </a>
+                    </li>
+                    <li class="nav-item dropdown d-md-down-none">
+                        <a class="nav-link" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
+                            <i class="cui-list" aria-hidden="true" style="font-size: 16px;"></i>
+                            <span class="badge badge-pill badge-warning">15</span>
+                        </a>
+                    </li>
+                    <li class="nav-item dropdown d-md-down-none">
+                        <a class="nav-link" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
+                            <i class="cui-envelope-letter" aria-hidden="true" style="font-size: 16px;"></i>
+                            <span class="badge badge-pill badge-info">7</span>
+                        </a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link nav-link" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
+                            <img class="img-avatar" src="./img/6.jpg" alt="admin@bootstrapmaster.com">
+                        </a>
+                    </li>
+                </ul>
+            </header>
 
-    <!-- Font Awesome JS -->
-    <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/solid.js" integrity="sha384-tzzSw1/Vo+0N5UhStP3bvwWPq+uvzCMfrN1fEFe+xBmv1C/AtVX5K0uZtmcHitFZ" crossorigin="anonymous"></script>
-    <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/fontawesome.js" integrity="sha384-6OIrr52G08NpOFSZdxxz1xdNSndlD4vdcf/q2myIUVO0VsqaGHJsB0RaBE01VTOY" crossorigin="anonymous"></script>
-</head>
+            <div class="app-body">
 
-<body>
-  <div class="wrapper">
-        <!-- Sidebar Holder -->
-        <nav id="sidebar">
-            <div class="sidebar-header">
-                <h3>Logo Phusy</h3>
-            </div>
-
-            <ul class="list-unstyled components">
-                <li class="active">
-                    <a href="#homeSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Home</a>
-                    <ul class="collapse list-unstyled" id="homeSubmenu">
-                        <li>
-                            <a href="#">Home 1</a>
-                        </li>
-                    </ul>
-                </li>
-                <li>
-                    <a href="#">About</a>
-                    <a href="#pageSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Pages</a>
-                    <ul class="collapse list-unstyled" id="pageSubmenu">
-                        <li>
-                            <a href="#">Page 1</a>
-                        </li>
-                    </ul>
-                </li>
-                <li>
-                    <a href="#">Contact</a>
-                </li>
-            </ul>
-        </nav>
-
-        <!-- Page Content Holder -->
-        <div id="content">
-
-            <nav class="navbar navbar-expand-lg navbar-light bg-light">
-                <div class="container-fluid">
-
-                    <button type="button" id="sidebarCollapse" class="navbar-btn">
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                    </button>
-                    <button class="btn btn-dark d-inline-block d-lg-none ml-auto" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                        <i class="fas fa-align-justify"></i>
-                    </button>
-
-                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                        <ul class="nav navbar-nav ml-auto">
-                            <li class="nav-item active">
-                                <a class="nav-link" href="#">Header</a>
+                <div class="sidebar">
+                   <nav class="sidebar-nav">
+                        <ul class="nav">
+                            <li class="nav-item">
+                                <a class="nav-link active" href="#">
+                                    <i class="nav-icon cui-speedometer"></i> Dashboard
+                                    <span class="badge badge-primary">NEW</span>
+                                </a>
                             </li>
+
+                                <!-- Title-1 -->
+                            <li class="nav-title">Nav Title</li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">
+                                    <i class="nav-icon cui-speedometer"></i> Nav item
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">
+                                    <i class="nav-icon cui-speedometer"></i> Nav item
+                                </a>
+                            </li>
+
+                                <!-- Title-2 -->
+                            <li class="nav-title">Nav Title 2</li>
+
+                                <!--  dropdown-item -->
+                            <li class="nav-item nav-dropdown">
+                                <a class="nav-link nav-dropdown-toggle" href="#">
+                                    <i class="nav-icon cui-puzzle"></i> Nav dropdown
+                                </a>
+                                <ul class="nav-dropdown-items">
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#">
+                                            <i class="nav-icon cui-puzzle"></i> Nav dropdown item
+                                        </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#">
+                                            <i class="nav-icon cui-puzzle"></i> Nav dropdown item
+                                        </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#">
+                                            <i class="nav-icon cui-puzzle"></i> Nav dropdown item
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+
+                                <!--  dropdown-item -->
+                            <li class="nav-item nav-dropdown">
+                                <a class="nav-link nav-dropdown-toggle" href="#">
+                                    <i class="nav-icon cui-puzzle"></i> Nav dropdown 2
+                                </a>
+                                <ul class="nav-dropdown-items">
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#">
+                                            <i class="nav-icon cui-puzzle"></i> Nav dropdown item 2
+                                        </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#">
+                                            <i class="nav-icon cui-puzzle"></i> Nav dropdown item 2
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+
+                            <!-- Title-3 -->
+                            <li class="nav-title">Nav Title 3</li>
+
+                            <!-- labels -->
+                            <li class="nav-item d-compact-none d-minimized-none">
+                                <a class="nav-label" href="#">
+                                <i class="fa fa-circle text-danger"></i> Label danger</a>
+                            </li>
+                            <li class="nav-item d-compact-none d-minimized-none">
+                                <a class="nav-label" href="#">
+                                <i class="fa fa-circle text-info"></i> Label info</a>
+                            </li>
+                            <li class="nav-item d-compact-none d-minimized-none">
+                                <a class="nav-label" href="#">
+                                <i class="fa fa-circle text-warning"></i> Label warning</a>
+                            </li>
+
+                            <!--  brand-button-links -->
+                            <li class="nav-item mt-auto">
+                                <a class="nav-link nav-link-success" href="https://coreui.io">
+                                    <i class="nav-icon cui-cloud-download"></i> Download CoreUI
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link nav-link-danger" href="https://coreui.io/pro/">
+                                    <i class="nav-icon cui-layers"></i> Try CoreUI
+                                    <strong>PRO</strong>
+                                </a>
                             </li>
                         </ul>
-                    </div>
+                    </nav>
+                    <button class="sidebar-minimizer brand-minimizer" type="button"></button>
                 </div>
-            </nav>
+
+                <main class="main">
+                    <div id="breadcrumb">
+                        <ol class="breadcrumb">
+                            <li class="breadcrumb-item">Home</li>
+                            <li class="breadcrumb-item">
+                                <a href="#">Admin</a>
+                            </li>
+                            <li class="breadcrumb-item active">Dashboard</li>
+
+                            <li class="breadcrumb-menu d-md-down-none">
+                                <div class="btn-group" role="group" aria-label="Button group">
+                                    <a class="btn" href="#">
+                                        <i class="cui-speech" aria-hidden="true"></i>
+                                    </a>
+                                    <a class="btn" href="./">
+                                        <i class="cui-graph" aria-hidden="true"></i> &nbsp;Dashboard
+                                    </a>
+                                    <a class="btn" href="#">
+                                        <i class="cui-settings" aria-hidden="true"></i> &nbsp;Settings
+                                    </a>
+                                </div>
+                            </li>
+                        </ol>
+                    </div>
+                </main>
+               
+            </div>
+            <footer class="app-footer">
+                <div>
+                    <a href="https://coreui.io/pro/">CoreUI Pro</a>
+                    <span>© 2018 creativeLabs.</span>
+                </div>
+                <div class="ml-auto">
+                    <span>Powered by</span>
+                    <a href="https://coreui.io/pro/">CoreUI Pro</a>
+                </div>
+            </footer>
+            <!-- Optional JavaScript -->
+            <!-- jQuery first, then Popper.js, Bootstrap, then CoreUI  -->
+            <script src="http://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+            <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
+            <script src="https://unpkg.com/@coreui/coreui/dist/js/coreui.min.js"></script>
+            
         </div>
-    </div>
 
-    <!-- jQuery CDN - Slim version (=without AJAX) -->
-    <!-- jQuery CDN - Slim version (=without AJAX) -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <!-- Popper.JS -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
-    <!-- Bootstrap JS -->
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
-    <script type="text/javascript">
-       $(document).ready(function () {
-           $('#sidebarCollapse').on('click', function () {
-               $('#sidebar').toggleClass('active');
-               $(this).toggleClass('active');
-           });
-       });
-   </script>
-</body>
-
+    </body>
 </html>
+
